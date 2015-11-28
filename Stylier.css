@@ -1,0 +1,36 @@
+.primaryBackground
+{
+	-fx-background-color: #27272B;
+}
+
+.focusBackground
+{
+	-fx-background-color: #3D3C37;
+}
+
+.accentBackground
+{
+	-fx-background-color: #1A1A22;
+}
+
+.root
+{
+	-fx-background-color: #1A1A22;
+	-fx-box-border: transparent;
+}
+
+.primaryText
+{
+	-fx-fill: #646157;
+	-fx-text-fill: #646157;
+}
+
+#scrollMe .viewport
+{
+	-fx-box-border: transparent;
+	-fx-background-color: #27272B;
+}
+
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+}

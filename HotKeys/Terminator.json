@@ -1,0 +1,72 @@
+[
+
+	{ "lvl":0,
+		"set":
+		[
+			{"combo":"Ctrl+Shift+W", "desc":"Close terminal"},
+			{"combo":"Ctrl+Shift+Q", "desc":"Close window"},
+			{"combo":"Ctrl+Shift+C", "desc":"Copy"},
+			{"combo":"Ctrl+Tab", "desc":"Focus next terminal"},
+			{"combo":"Ctrl+Shift+Tab", "desc":"Focus previous terminal"},
+			{"combo":"F11", "desc":"Fullscreen"},
+			{"combo":"Alt+Up", "desc":"Focus terminal up"},
+			{"combo":"Alt+Down", "desc":"Focus terminal below"},
+			{"combo":"Alt+Left", "desc":"Focus terminal left"},
+			{"combo":"Alt+Right", "desc":"Focus terminal right"}
+		]
+	},
+
+	{ "lvl":1,
+		"set":
+		[
+			{"combo":"Super+G", "desc":"Group all terminals"},
+			{"combo":"Super+T", "desc":"Group terminals in tab"},
+			{"combo":"Ctrl+Alt+Shift+A", "desc":"Toggle window visibility"},
+			{"combo":"Ctrl+Shift+PageUp", "desc":"Move the tab left"},
+			{"combo":"Ctrl+Shift+PageDown", "desc":"Move the tab right"},
+			{"combo":"Ctrl+Shift+T", "desc":"New tab"},
+			{"combo":"Super+I", "desc":"Spawn new terminator"},
+			{"combo":"Ctrl+Shift+I", "desc":"New window"},
+			{"combo":"Ctrl+Shift+V", "desc":"Paste"},
+			{"combo":"Ctrl+R", "desc":"Reset terminal"},
+		]
+	},
+
+	{ "lvl":2,
+		"set":
+		[
+			{"combo":"Ctrl+Shift+G", "desc":"Reset and clear terminal"},
+			{"combo":"Ctrl+Shift+Down", "desc":"Resize terminal down"},
+			{"combo":"Ctrl+Shift+Up", "desc":"Resize terminal up"},
+			{"combo":"Ctrl+Shift+Left", "desc":"Resize terminal left"},
+			{"combo":"Ctrl+Shift+Right", "desc":"Resize terminal right"},
+			{"combo":"Ctrl+Shift+Right", "desc":"Resize terminal right"},
+			{"combo":"Super+Shift+R", "desc":"Rotate terminals anti-clockwise"},
+			{"combo":"Super+R", "desc":"Rotate terminals clockwise"},
+			
+		]
+	},
+
+	{ "lvl":3,
+		"set":
+		[
+			{"combo":"Ctrl+Z", "desc":"Zoom"},
+			{"combo":"Ctrl+Shift+O", "desc":"Split horizantally"},
+			{"combo":"Ctrl+Shift+e", "desc":"Split vertically"},
+			{"combo":"Shift+Ctrl+F", "desc":"Search terminal scrollback"},
+			{"combo":"Ctrl+Shift+S", "desc":"Toggle scroll bar"},
+			{"combo":"Ctrl+Shift+X", "desc":"Maximize terminal"},
+		]
+	},
+
+	{ "lvl":4,
+		"set":
+		[
+			{"combo":"Super+Shift+G", "desc":"Ungroup all terminals"},
+			{"combo":"Super+Shift+T", "desc":"Ungroup terminals in tab"},
+			{"combo":"Ctrl+Minus", "desc":"Decrease font size"},
+			{"combo":"Ctrl+0", "desc":"Restore original font size"},
+			{"combo":"Ctrl+Equals", "desc":"Increase font size"},
+		]
+	}
+]

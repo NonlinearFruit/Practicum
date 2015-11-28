@@ -1,0 +1,23 @@
+[
+
+	{ 
+		"lvl":"Basics",
+		"type":"cmds",
+		"set":
+		[
+			{"combo":"Win", "desc":"Open start menu"},
+			{"combo":"Win+M", "desc":"Minimize all windows"},
+			{"combo":"Win+Shift+M", "desc":"Un-Minimize all windows"},
+			{"combo":"Win+E", "desc":"Open file explorer"},
+			{"combo":"Win+L", "desc":"Lock computer"},
+			{"combo":"Win+D", "desc":"Display desktop"},
+			{"combo":"Win+B", "desc":"Activate taskbar"},
+			{"combo":"Win+T", "desc":"Cycle programs on taskbar"},
+			{"combo":"Win+Pause", "desc":"Display system properties"},
+			{"combo":"Ctrl+X", "desc":"Cut"},
+			{"combo":"Ctrl+C", "desc":"Copy"},
+			{"combo":"Ctrl+V", "desc":"Paste"},
+			{"combo":"Ctrl+A", "desc":"Select all"},
+		]
+	}
+]

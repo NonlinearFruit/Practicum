@@ -1,0 +1,30 @@
+[
+
+	{ 
+		"lvl":"Basics",
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+K", "desc":"Insert or edit link"},
+			{"combo":"Alt+Enter", "desc":"Open link"},
+			{"combo":"Ctrl+/", "desc":"Show common keyboard shortcuts"},
+			{"combo":"Ctrl+B", "desc":"Bold"},
+			{"combo":"Ctrl+I", "desc":"Italic"},
+			{"combo":"Ctrl+U", "desc":"Underline"},
+			{"combo":"Alt+Shift+5", "desc":"Strikethrough"},
+			{"combo":"Ctrl+.", "desc":"Superscript"},
+			{"combo":"Ctrl+,", "desc":"Subscript"},
+			{"combo":"Ctrl+/", "desc":"Clear formatting"},
+			{"combo":"Ctrl+0", "desc":"Apply 'Normal Text'"},
+			{"combo":"Ctrl+1", "desc":"Apply 'Heading 1"},
+			{"combo":"Ctrl+2", "desc":"Apply Heading 2'"},
+			{"combo":"Ctrl+Shift+L", "desc":"Left align text"},
+			{"combo":"Ctrl+Shift+R", "desc":"Right align text"},
+			{"combo":"Ctrl+Shift+E", "desc":"Center align text"},
+			{"combo":"Ctrl+Shift+J", "desc":"Justify text"},
+			{"combo":"Ctrl+Shift+7", "desc":"Toggle numbered list"},
+			{"combo":"Ctrl+Shift+8", "desc":"Toggle bulleted list"},
+		]
+	}
+]
+

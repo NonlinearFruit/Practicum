@@ -1,0 +1,109 @@
+[
+
+	{ 
+		"lvl":0,
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+N", "desc":"New window"},
+			{"combo":"Ctrl+Shift+N", "desc":"New private window"},
+			{"combo":"F2", "desc":"Show quick cmds"},
+			{"combo":"Shift+Escape", "desc":"Task manager"},
+			{"combo":"Alt+P", "desc":"Settings"},
+			{"combo":"Ctrl+Shift+E", "desc":"Show extensions"},
+			{"combo":"Ctrl+Shift+Delete", "desc":"Clear private data"},
+			{"combo":"Ctrl+Q", "desc":"Exit"},
+			{"combo":"Ctrl+F1", "desc":"Keyboard cheat sheet"}
+		]
+	},
+
+	{ 
+		"lvl":1,
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+P", "desc":"Print"},
+			{"combo":"Ctrl+U", "desc":"View page source"},
+			{"combo":"Ctrl+Shift+I", "desc":"Developer tools"},
+			{"combo":"Ctrl+Shift+V", "desc":"Paste as plain txt/Paste and Go"},
+			
+			{"combo":"F11", "desc":"Fullscreen"},
+			{"combo":"Ctrl+Shift+B", "desc":"Bookmarks bar"},
+			{"combo":"Ctrl+M", "desc":"Toggle menu position?"},
+			{"combo":"Ctrl+Alt+F", "desc":"Toggle status bar"},
+			{"combo":"Ctrl+F11", "desc":"Toggle UI"},
+			{"combo":"Ctrl+Equals", "desc":"Zoom in"},
+			{"combo":"Ctrl+Minus", "desc":"Zoom out"},
+		]
+	},
+
+	{ 
+		"lvl":2,
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+0", "desc":"Zoom reset"},
+			{"combo":"F4", "desc":"Toggle panel"},
+			{"combo":"F6", "desc":"Bookmarks panel"},
+			{"combo":"F1", "desc":"Mail panel"},
+		]
+	},
+
+	{ 
+		"lvl":3,
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+Y", "desc":"Contacts panel"},
+			{"combo":"Ctrl+J", "desc":"Downloads panel"},
+			{"combo":"Ctrl+H", "desc":"Notes panel"},
+
+			{"combo":"Ctrl+T", "desc":"New tab"},
+			{"combo":"Ctrl+W", "desc":"Close tab"},
+		]
+	},
+
+	{ 
+		"lvl":4,
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+1", "desc":"Next tab (recent)"},
+			{"combo":"Ctrl+2", "desc":"Previous tab (recent)"},
+			{"combo":"Ctrl+3", "desc":"Next tab"},
+			{"combo":"Ctrl+4", "desc":"Previous tab"},
+			{"combo":"Shift+Ctrl+T", "desc":"Re-open closed tab"},
+		]
+	},
+
+	{ 
+		"lvl":5,
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+F9", "desc":"Tile tab stack vertically"},
+			{"combo":"Ctrl+F8", "desc":"Tile tab stack horizontally"},
+			{"combo":"Ctrl+F7", "desc":"Tile tab stack to grid"},
+			{"combo":"Ctrl+F6", "desc":"Untile tab stack"},
+
+			{"combo":"Ctrl+D", "desc":"Create bookmark"},
+			{"combo":"Ctrl+L", "desc":"Focus address bar"},
+			{"combo":"F5", "desc":"Refresh"},
+			{"combo":"Ctrl+F5", "desc":"Refresh without cache"},
+			{"combo":"F9", "desc":"Focus page"},
+			{"combo":"Ctrl+E", "desc":"Focus searchfield"},
+			{"combo":"Ctrl+F", "desc":"Find"},
+			{"combo":"F3", "desc":"Find next"},
+			{"combo":"Shift+F3", "desc":"Find previous"},
+			{"combo":"Ctrl+Left", "desc":"History back"},
+			{"combo":"Ctrl+Right", "desc":"History forward"},
+			{"combo":"Ctrl+O", "desc":"Open..."},
+			{"combo":"Ctrl+S", "desc":"Save as..."},
+			{"combo":"Alt+Home", "desc":"Home"},
+			{"combo":"Shift+Left", "desc":"Navigate Left"},
+			{"combo":"Shift+Right", "desc":"Navigate Right"},
+			{"combo":"Shift+Up", "desc":"Navigate Up"},
+			{"combo":"Shift+Down", "desc":"Navigate Down"}
+		]
+	}
+]

@@ -1,0 +1,90 @@
+[
+
+	{ 
+		"lvl":"Line Manipulation",
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+X", "desc":"Cut line"},
+			{"combo":"Ctrl+L", "desc":"Select line"},
+			{"combo":"Ctrl+Enter", "desc":"Insert line after"},
+			{"combo":"Ctrl+Shift+Enter", "desc":"Insert line before"},
+			{"combo":"Ctrl+Shift+Up", "desc":"Move line up"},
+			{"combo":"Ctrl+]", "desc":"Indent line"},
+			{"combo":"Ctrl+[", "desc":"Un-Indent line"},
+			{"combo":"Ctrl+Shift+D", "desc":"Duplicate line(s)"},
+			{"combo":"Ctrl+J", "desc":"Join next line to line"},
+			{"combo":"Ctrl+/", "desc":"(Un)Comment line"},
+			{"combo":"Ctrl+Shift+/", "desc":"Block (un)comment line"},
+			{"combo":"Ctrl+Shift+Down", "desc":"Move line down"}
+		]
+	},
+
+	{ 
+		"lvl":"Basics",
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+Q", "desc":"Close Sublime Text"},
+			{"combo":"Ctrl+D", "desc":"Select word (Multi-select dups)"},
+			{"combo":"Ctrl+M", "desc":"Goto matching enclosure"},
+			{"combo":"Ctrl+Shift+M", "desc":"Select all in enclosure"},
+			{"combo":"Ctrl+Y", "desc":"Undo/Repeat last shortcut"},
+			{"combo":"Ctrl+Shift+V", "desc":"Paste with correct indents"},
+			{"combo":"Ctrl+Space", "desc":"Auto-complete suggestion"},
+			{"combo":"Ctrl+U", "desc":"Soft Undo"}
+		]
+	},
+
+	{ 
+		"lvl":"Goto",
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+P", "desc":"Goto file"},
+			{"combo":"Ctrl+;", "desc":"Goto word"},
+			{"combo":"Ctrl+R", "desc":"Goto symbol"},
+			{"combo":"Ctrl+G", "desc":"Goto line"}
+		]
+	},
+
+	{ 
+		"lvl":"Find/Replace",
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+F", "desc":"Find"},
+			{"combo":"Ctrl+H", "desc":"Replace"},
+			{"combo":"Shift+Ctrl+F", "desc":"Find in files"},
+			{"combo":"Shift+F3", "desc":"Find previous"},
+			{"combo":"F3", "desc":"Find next"}
+		]
+	},
+
+	{ 
+		"lvl":"Column",
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Shift+Alt+2", "desc":"Split view into two columns"},
+			{"combo":"Shift+Alt+1", "desc":"Revert view to single column"},
+			{"combo":"Shift+Alt+5", "desc":"Set view to grid (4 groups)"},
+			{"combo":"Ctrl+2", "desc":"Jump to group 2"},
+			{"combo":"Shift+Ctrl+2", "desc":"Move file to group 2"}
+		]
+	},
+
+	{ 
+		"lvl":"Misc",
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Shift+Ctrl+K", "desc":"Delete line"},
+			{"combo":"Shift+Ctrl+L", "desc":"Multi-select selected lines"},
+			{"combo":"Alt+F3", "desc":"Multi-select all dups"},
+			{"combo":"Escape", "desc":"Un-Multi-Select"},
+			{"combo":"Shift+Ctrl+[", "desc":"Fold code"},
+			{"combo":"Shift+Ctrl+]", "desc":"Unfold code"}
+		]
+	}
+]
