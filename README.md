@@ -1,5 +1,5 @@
 # Practicum
-A system agnostic tool that allows power users to increase their dexterity and familiarity with the shortcuts and commands in their favorite programs
+A system agnostic tool that allows power users to increase their dexterity and familiarity with the shortcuts and commands in their favorite programs. Practicum allows seasoned veterans and n00bs to master the subtle art of power using.
 
 
 ## Table of Contents
@@ -8,27 +8,51 @@ A system agnostic tool that allows power users to increase their dexterity and f
 	- [Screenshots](#screenshots)
 	- [Features](#features)
 	- [API](#api)
-	- [Todo](#todo)
+	- [ToDo](#todo)
 	- [FAQ / Troubleshooting](#faq--troubleshooting)
 	- [License](#license)
 
 
 ## Quick Setup
-ToDo
+Practicum.jar is an executable jar, so all it requires is a Java 8 runtime environment. The directory with Practicum.jar should also contain the HotKeys, Cmds, Typing, and Custom directories from this repo. Once these requirements have been met, Practicum should properly execute on Windows, Mac, and Linux.
 
 ## Screenshots
-ToDo
+ToDo: display Practicum in action
 
 ## Features
-ToDo
+Programs current supported by default are:
+ * Sublime Text
+ * Google Docs
+ * Vivaldi
+ * Vim
 
 ## API
-ToDo
+ToDo: explain Json files
 
 ## ToDo
 
-* [x] Nothing
-* [ ] ToDo
+* [x] Working demo
+* [ ] Dynamic programs
+* [ ] Touch typing 
+* [ ] Cheatsheets
+* [ ] Custom programs
+* HotKey programs to add:
+ * [ ] Netbeans
+ * [ ] Windows
+ * [ ] Terminator
+* Cmd programs to add:
+ * [ ] Ubuntu Cmd Line
+ * [ ] AoE 2
+ * [ ] Project Zomboid
+ * [ ] Vintageous
+ * [ ] Emmet
+ * [ ] Minecraft
+* Touch Typing practice to add:
+ * [ ] Alphanumerics
+ * [ ] Ipsum Lorem
+ * [ ] Foreign Languages
+ * [ ] Classic Literature
+ * [ ] Bible
 
 ## FAQ / Troubleshooting
 
