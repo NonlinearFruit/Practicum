@@ -74,6 +74,7 @@ Here is a json file from an example program.
  * [ ] Project Zomboid
  * [ ] Vintageous
  * [ ] Emmet
+ * [ ] Vimium
  * [ ] Minecraft
 * Touch Typing practice to add:
  * [ ] Alphanumerics
