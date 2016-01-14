@@ -17,7 +17,10 @@ A system agnostic tool that allows power users to increase their dexterity and f
 Practicum.jar is an executable jar, so all it requires is a Java 8 runtime environment. The directory with Practicum.jar should also contain the HotKeys, Cmds, Typing, and Custom directories from this repo. Once these requirements have been met, Practicum should properly execute on Windows, Mac, and Linux.
 
 ## Screenshots
-ToDo: display Practicum in action
+
+![Home Screen](Resources/HomeScreen.png?raw=true "Home Screen")
+
+![Hotkey Example](Resources/HotkeyExample.png?raw=true "Hotkey Example")
 
 ## Features
 Programs current supported by default are:
@@ -27,7 +30,32 @@ Programs current supported by default are:
  * Vim
 
 ## API
-ToDo: explain Json files
+Here is a json file from an example program.
+
+	[
+	{ 
+		"lvl":"Window Manipulation",
+		"type":"hotkeys",
+		"set":
+		[
+			{"combo":"Ctrl+N", "desc":"New window"},
+			{"combo":"Ctrl+Shift+N", "desc":"New private window"},
+			{"combo":"Ctrl+Q", "desc":"Exit"}
+		]
+	},
+	
+	{
+		"lvl":"Basics",
+		"type":"cmds",
+		"set":
+		[
+			{"combo":"q!", "desc":"Quit"},
+			{"combo":"ss", "desc":"Save"},
+			{"combo":"o", "desc":"Open"},
+			{"combo":"neo", "desc":"New file"}
+		]
+	}
+	]
 
 ## ToDo
 
@@ -46,6 +74,7 @@ ToDo: explain Json files
  * [ ] Project Zomboid
  * [ ] Vintageous
  * [ ] Emmet
+ * [ ] Vimium
  * [ ] Minecraft
 * Touch Typing practice to add:
  * [ ] Alphanumerics
