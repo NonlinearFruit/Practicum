@@ -34,10 +34,18 @@
       </VBox>
    </center>
    <top>
-      <HBox prefHeight="0.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="0.0" prefWidth="200.0" stylesheets="@Stylier.css" BorderPane.alignment="CENTER">
          <children>
-            <ComboBox fx:id="chooser" onAction="#setup" prefWidth="150.0" />
-            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <ComboBox fx:id="typeChooser" onAction="#typeChosen" prefWidth="110.0">
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="chooser" onAction="#setup" prefWidth="130.0">
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin></ComboBox>
+            <Pane prefHeight="200.0" prefWidth="10.0" HBox.hgrow="ALWAYS" />
             <Label text="Streak: ">
                <HBox.margin>
                   <Insets />
@@ -54,7 +62,10 @@
    <left>
       <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Slider fx:id="slider" onMouseReleased="#lvlEntered" orientation="VERTICAL" />
+            <Slider fx:id="slider" onMouseReleased="#lvlEntered" orientation="VERTICAL">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin></Slider>
          </children>
       </VBox>
    </left>

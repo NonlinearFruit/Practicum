@@ -1,0 +1,39 @@
+[
+
+	{ 
+		"lvl":"Basic Motion",
+		"type":"cmds",
+		"set":
+		[
+			{"combo":"j", "desc":"Down"},
+			{"combo":"G", "desc":"Last line"},
+			
+			{"combo":"k", "desc":"Up"},
+			{"combo":"gg", "desc":"First line"},
+
+			{"combo":"h", "desc":"Left"},
+			{"combo":"b", "desc":"Previous word"},
+			{"combo":"B", "desc":"Previous WORD"},
+			{"combo":"^", "desc":"First non-blank character"},
+			{"combo":"0", "desc":"Beginning of line"},
+
+			{"combo":"l", "desc":"Right"},
+			{"combo":"e", "desc":"End of word"},
+			{"combo":"w", "desc":"Beginning of next word"},
+			{"combo":"E", "desc":"End of WORD"},
+			{"combo":"W", "desc":"Beginning of next WORD"},
+			{"combo":"$", "desc":"End of line"},
+
+			{"combo":"p", "desc":"Paste"},
+			{"combo":"P", "desc":"Paste before cursor"},
+			{"combo":".", "desc":"Repeat"},
+			{"combo":"u", "desc":"Undo"},
+			{"combo":"r", "desc":"Replace character"},
+			{"combo":"yy", "desc":"Yank current line"},
+			{"combo":"dd", "desc":"Delete current line"},
+			{"combo":"==", "desc":"Auto-indent line"},
+			{"combo":"<<", "desc":"Un-indent line"},
+			{"combo":">>", "desc":"Indent line"},
+		]
+	}
+]

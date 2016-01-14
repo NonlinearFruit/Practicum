@@ -2,11 +2,15 @@ import java.util.Scanner;
 import java.io.File;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 class Model{
 
 	private static List<HotKey> keys;
 	private static List<HotKey> cmds;
+	private static double defaultDif = 3;
+	private static double maxDif = 3;
+
 
 	public enum Type{ CMD,HOTKEY,TYPING,CUSTOM }
 
@@ -20,7 +24,8 @@ class Model{
 		SUBLIME("HotKeys/Sublime.json"),
 		VIVALDI("HotKeys/Vivaldi.json"),
 
-		VIM("Cmds/Vim.json");
+		VIM("Cmds/Vim.json"),
+		VIMIUM("Cmds/Vimium.json");
 
 		private String path;
 		Json(String path)
@@ -72,10 +77,12 @@ class Model{
 		for (File file : files) {
 			System.out.println(file.getName());
 		}
-		return null;
+		return Arrays.asList(Json.values());
 	}
 
-	private static void wakeUp(Json file)
+	private static void wakeUp(Json file) { wakeUp(file,defaultDif); }
+
+	private static void wakeUp(Json file, double difficulty)
 	{
 		getJsons(Type.CMD);
 		keys = new ArrayList<>();
@@ -84,9 +91,11 @@ class Model{
 		try{ content = new Scanner(new File(file.getPath())).useDelimiter("\\Z").next(); } catch(Exception e){ return; }
 		content = content.substring(content.indexOf("lvl")+3);
 		String[] list = content.split("lvl");
+		int scale = (int) Math.floor(list.length*difficulty/maxDif);
+			scale = Math.max(scale,1);
+		for(int j=0; j<list.length && j<scale; j++) {
 
-		for (String lvl: list) {
-
+			String lvl = list[j];
 			int i,e;
 			String type,combo,desc,find,title;
 
@@ -135,11 +144,23 @@ class Model{
 		return keys;
 	}
 
+	public static List<HotKey> getKeys(Json file, double difficulty)
+	{
+		wakeUp(file,difficulty);
+		return keys;
+	}
+
 	public static List<HotKey> getCmds() { return cmds; }
 
 	public static List<HotKey> getCmds(Json file)
 	{
 		wakeUp(file);
 		return cmds;
+	}
+
+	public static List<HotKey> getCmds(Json file, double difficulty)
+	{
+		wakeUp(file,difficulty);
+		return keys;
 	}
 }

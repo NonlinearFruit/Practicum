@@ -14,6 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Slider;
 import javafx.util.StringConverter;
+import javafx.scene.control.ToggleButton;
 
 /**
  *
@@ -24,12 +25,17 @@ public class GuiController implements Initializable
 	private static final Random RANDOM = new Random();
 
 	/* Normal Attributes */
+	private double level;
 	private HotKey guessME;
 	private List<HotKey> possibleKeys;
 	private List<HotKey> possibleCmds;
 	private int streakCount;
 	private int streakRecord=0;
 	/* FXML Attributes! */
+	// @FXML private ToggleButton cmdToggle;
+	// @FXML private ToggleButton hotkeyToggle;
+	// @FXML private ToggleButton typingToggle;
+	// @FXML private ToggleButton customToggle;
 	@FXML private Label hint;
 	@FXML private Label answer;
 	@FXML private Button btn;
@@ -37,7 +43,8 @@ public class GuiController implements Initializable
 	@FXML private Label statLeft;
 	@FXML private Label statRight;
 	@FXML private TextField input;
-	@FXML private ComboBox chooser; 
+	@FXML private ComboBox<Model.Json> chooser; 
+	@FXML private ComboBox<Model.Type> typeChooser; 
 	@FXML private Slider slider;
    
    /* Normal Methods */
@@ -56,13 +63,16 @@ public class GuiController implements Initializable
    		streak.setText("0");
    		streakCount = -1;
 
-   		for (Model.Json json : Model.Json.values()) {
-   			chooser.getItems().add(json);
-   		}
+   		// for (Model.Json json : Model.Json.values()) {
+   		// 	chooser.getItems().add(json);
+   		// }
+
+   		chooser.getItems().addAll(Model.Json.values()); // Should be in listener on type chooser
+   		typeChooser.getItems().addAll(Model.Type.values()); 
 
    		slider.setMin(0);
         slider.setMax(3);
-        slider.setValue(1);
+        slider.setValue(3);
         slider.setMinorTickCount(0);
         slider.setMajorTickUnit(1);
         slider.setSnapToTicks(true);
@@ -96,7 +106,7 @@ public class GuiController implements Initializable
                 }
             }
         });
-    }
+   }
 
     /**
      * Sets up the accelerators for the 
@@ -195,10 +205,11 @@ public class GuiController implements Initializable
 	public void setup(ActionEvent event)
 	{
 		hint.getScene().getAccelerators().clear();
-		Model.Json json = (Model.Json) chooser.getValue();
+		level = slider.valueProperty().getValue();
+		Model.Json json = chooser.getValue();
 		System.out.println(json);
-   		possibleKeys = Model.getKeys(json);
-   		possibleCmds = Model.getCmds();
+   		possibleKeys = Model.getKeys(json,level);
+   		possibleCmds = Model.getCmds(json,level);
 
    		streakCount = -1;
    		guessME = null;
@@ -221,6 +232,13 @@ public class GuiController implements Initializable
 	@FXML
 	public void lvlEntered(Event event)
 	{
-		System.out.println(slider.valueProperty().getValue());
+		setup(null);
+	}
+
+	@FXML
+	public void typeChosen(ActionEvent event)
+	{
+		chooser.getItems().clear();
+		chooser.getItems().addAll(Model.getJsons(typeChooser.getValue()));
 	}
 }
