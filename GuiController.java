@@ -67,7 +67,7 @@ public class GuiController implements Initializable
    		// 	chooser.getItems().add(json);
    		// }
 
-   		chooser.getItems().addAll(Model.Json.values()); // Should be in listener on type chooser
+   		// chooser.getItems().addAll(Model.Json.values()); // Should be in listener on type chooser
    		typeChooser.getItems().addAll(Model.Type.values()); 
 
    		slider.setMin(0);
@@ -232,7 +232,8 @@ public class GuiController implements Initializable
 	@FXML
 	public void lvlEntered(Event event)
 	{
-		setup(null);
+		if(level!=slider.valueProperty().getValue())
+			setup(null);
 	}
 
 	@FXML

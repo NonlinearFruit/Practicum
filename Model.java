@@ -19,13 +19,13 @@ class Model{
 		// TERMINATOR("HotKeys/Terminator.json"),
 		// ULTIMATE("HotKeys/Ultimate.json"),
 		// WINDOWS("HotKeys/Windows.json"),
-	public enum Json {
-		GOOGLEDOCS("HotKeys/GoogleDocs.json"),
-		SUBLIME("HotKeys/Sublime.json"),
-		VIVALDI("HotKeys/Vivaldi.json"),
+	public static class Json {
+		// GOOGLEDOCS("HotKeys/GoogleDocs.json"),
+		// SUBLIME("HotKeys/Sublime.json"),
+		// VIVALDI("HotKeys/Vivaldi.json"),
 
-		VIM("Cmds/Vim.json"),
-		VIMIUM("Cmds/Vimium.json");
+		// VIM("Cmds/Vim.json"),
+		// VIMIUM("Cmds/Vimium.json");
 
 		private String path;
 		Json(String path)
@@ -41,18 +41,18 @@ class Model{
 
 	}
 
-	public static Json getJsonByName(String name)
-	{
-		for (Json json : Json.values()) {
-			if(json.toString().equals(name))
-				return json;
-		}
-		return null;
-	}
+	// public static Json getJsonByName(String name)
+	// {
+	// 	for (Json json : Json.values()) {
+	// 		if(json.toString().equals(name))
+	// 			return json;
+	// 	}
+	// 	return null;
+	// }
 
 	public static List<Json> getJsons(Type type)
 	{		
-		List<Json> results;
+		List<Json> results = new ArrayList<>();
 		File[] files;
 
 		File[] cmdFiles =  new File("./Cmds").listFiles();
@@ -75,9 +75,11 @@ class Model{
 		}
 
 		for (File file : files) {
-			System.out.println(file.getName());
+			String filename = file.getParentFile().getName()+"/"+file.getName();
+			System.out.println(filename);
+			results.add(new Json(filename));	
 		}
-		return Arrays.asList(Json.values());
+		return results;
 	}
 
 	private static void wakeUp(Json file) { wakeUp(file,defaultDif); }
@@ -93,6 +95,7 @@ class Model{
 		String[] list = content.split("lvl");
 		int scale = (int) Math.floor(list.length*difficulty/maxDif);
 			scale = Math.max(scale,1);
+			System.out.println(scale);
 		for(int j=0; j<list.length && j<scale; j++) {
 
 			String lvl = list[j];
