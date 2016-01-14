@@ -93,8 +93,8 @@ Here is a json file from an example program.
  * Create a json file that conforms to our standards (check out our [API](#api)) and save it to the Custom directory.
 * How do I modifiy the hotkeys/cmds for a specific program (Google Docs)?
  * This can be done by modifying the existing GoogleDocs.json in the HotKeys folder
-  * _NOTE:_ These changes will be lost on updates
-* Or by copying GoogleDocs.json to the Custom directory and then making modifications
+   * _NOTE:_ These changes will be lost on updates
+ * Or by copying GoogleDocs.json to the Custom directory and then making modifications
 
 ## License
 
