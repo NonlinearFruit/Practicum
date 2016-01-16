@@ -28,6 +28,7 @@ Programs current supported by default are:
  * Google Docs
  * Vivaldi
  * Vim
+ * Vimium
 
 ## API
 Here is a json file from an example program.
@@ -60,10 +61,10 @@ Here is a json file from an example program.
 ## ToDo
 
 * [x] Working demo
-* [ ] Dynamic programs
+* [x] Dynamic programs
 * [ ] Touch typing 
 * [ ] Cheatsheets
-* [ ] Custom programs
+* [x] Custom programs
 * HotKey programs to add:
  * [ ] Netbeans
  * [ ] Windows
@@ -74,10 +75,13 @@ Here is a json file from an example program.
  * [ ] Project Zomboid
  * [ ] Vintageous
  * [ ] Emmet
- * [ ] Vimium
+ * [x] Vimium
  * [ ] Minecraft
 * Touch Typing practice to add:
  * [ ] Alphanumerics
+ * [ ] Numpad Calculations
+ * [ ] Pseudo-Code
+ * [ ] Intro to Keyboard Typing
  * [ ] Ipsum Lorem
  * [ ] Foreign Languages
  * [ ] Classic Literature
@@ -86,10 +90,11 @@ Here is a json file from an example program.
 ## FAQ / Troubleshooting
 
 * How do I add a hotkeys/cmds from a different program?
- * Check out our [API](#api)
+ * Create a json file that conforms to our standards (check out our [API](#api)) and save it to the Custom directory.
 * How do I modifiy the hotkeys/cmds for a specific program (Google Docs)?
- * This can be done by modifying the existing GoogleDocs.json in the HotKeys folder.
- * _NOTE:_ These changes will be lost on updates
+ * This can be done by modifying the existing GoogleDocs.json in the HotKeys folder
+   * _NOTE:_ These changes will be lost on updates
+ * Or by copying GoogleDocs.json to the Custom directory and then making modifications
 
 ## License
 
