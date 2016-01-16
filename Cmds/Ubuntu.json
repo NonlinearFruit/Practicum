@@ -1,0 +1,62 @@
+[
+  { "lvl":"Basics",
+    "set":"cmds"
+    [
+      {"combo":"cd foo", "desc":"Change to 'foo' directory"},
+      {"combo":"pwd", "desc":"Display absolute file path"},
+      {"combo":"ls", "desc":"Show contents of current directory"},
+      {"combo":"man foo", "desc":"Manual page for 'foo'"},
+      {"combo":"sudo foo", "desc":"Execute 'foo' with root privileges"},
+      {"combo":"apt-get install foo", "desc":"Install 'foo' package"},
+      {"combo":"nano foo.txt", "desc":"Edit 'foo.txt'"},
+      {"combo":"echo foobar", "desc":"Print 'foobar' to STDOUT"},
+      {"combo":"cat foo.txt", "desc":"Display the contents of 'foo.txt'"},
+      {"combo":"cal", "desc":"Display this months calendar"}
+      {"combo":"grep foo", "desc":"Search STDIN for 'foo'"},
+    ]
+  },
+
+  { "lvl":"Dir Foo",
+    "set":"cmds"
+    [
+      {"combo":"rm foo.txt", "desc":"Remove 'foo.txt' from current directory"},
+      {"combo":"mv foo.txt bar", "desc":"Move 'foo.txt' to the 'bar' directory"},
+      {"combo":"cp foo.txt bar", "desc":"Copy 'foo.txt' to the 'bar' directory"},
+      {"combo":"apt-get remove foo", "desc":"Remove package 'foo'"},
+      {"combo":"apt-cache search foo", "desc":"Search to see if 'foo' is in your repos"},
+      {"combo":"pushd", "desc":"Add current directory to the directory stack"},
+      {"combo":"popd", "desc":"Change to the directory on top of the directory stack"},
+      {"combo":"passwd foo", "desc":"Change the password for 'foo' user"}
+      {"combo":"rmdir foo", "desc":"Remove the 'foo' directory"},
+      {"combo":"mkdir foo", "desc":"Make a 'foo' directory"},
+    ]
+  },
+
+  { "lvl":"Cmd Foo",
+    "set":"cmds"
+    [
+      {"combo":"poweroff", "desc":"Turn off the computer"},
+      {"combo":"find", "desc":""},
+      {"combo":"exit", "desc":"Exit current terminal session"},
+      {"combo":"xkill", "desc":"Kill a frozen window"},
+      {"combo":"!!", "desc":"Execute most recent command"},
+      {"combo":"!foo", "desc":"Execute most recent command starting with 'foo'"},
+      {"combo":"^foo^bar", "desc":"Substitute 'foo' with 'bar' in the previous command and execute it"},
+      {"combo":"foo|bar", "desc":"Pass the STDOUT of 'foo' into the STDIN of 'bar'"},
+      {"combo":"foo>bar", "desc":"Redirect STDOUT of 'foo' to 'bar.txt'"}
+    ]
+  },
+
+  { "lvl":"Advanced",
+    "set":"cmds"
+    [
+      {"combo":"wget http://foo.ed/bar.mp3", "desc":"Download 'http://foo.ed.bar.mp3'"},
+      {"combo":"unzip foo.zip", "desc":"Decompress 'foo.zip'"},
+      {"combo":"tar -xvf foo.tar", "desc":"Decompress 'foo.tar'"},
+      {"combo":"tar -xvjf foo.tar.bz2", "desc":"Decompress 'foo.tar.bz2'"},
+      {"combo":"tar -xvzf foo.tar.gz", "desc":"Decompress 'foo.tar.gz'"},
+      {"combo":"chmod u=rwx foo.txt", "desc":"Give the owner of 'foo.txt' read, write and execute permissions"},
+      {"combo":"chown foo bar.txt", "desc":"Make 'foo' user owner of 'bar.txt'"},
+    ]
+  }
+]

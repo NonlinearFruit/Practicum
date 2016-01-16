@@ -1,0 +1,68 @@
+[
+
+	{ "lvl":"Basics",
+		"set":
+		[
+			{"combo":"", "desc":"Starts playing"},
+			{"combo":" ", "desc":"Pause"},
+			{"combo":"	", "desc":"Switches marker between playlist and file manager"},
+			{"combo":"?", "desc":"Shows help"},
+			{"combo":"s", "desc":"Stops playing"},
+			{"combo":"a", "desc":"Adds a file to the playlist"},
+			{"combo":"n", "desc":"Plays next item from the playlist"},
+			{"combo":"b", "desc":"Plays previous item from the playlist"}
+		]
+	},
+
+
+	{ "lvl":"Volume",
+		"set":
+		[
+			{"combo":"<", "desc":"Decreases volume by 1% "},
+			{"combo":",", "desc":"Decreases volume by 5% "},
+			{"combo":">", "desc":"Increases volume by 1%"},
+			{"combo":".", "desc":"Increases volume by 5%"},
+			{"combo":"x", "desc":"Toggles the mixer channel"}
+		]
+	},
+
+	{ "lvl":"Playlist Edit",
+		"set":
+		[
+			{"combo":"d", "desc":"Removes marked item from the playlist"},
+			{"combo":"u", "desc":"Moves playlist item up"},
+			{"combo":"j", "desc":"Moves playlist item down"}
+		]
+	},
+
+	{ "lvl":"DJ",
+		"set":
+		[
+			{"combo":"C", "desc":"Clears the playlist"},
+			{"combo":"V", "desc":"Saves the playlist"},
+			{"combo":"Y", "desc":"Removes all empty items from the playlist"},
+			{"combo":"S", "desc":"Plays at random"},
+			{"combo":"R", "desc":"Repeats the same song in a loop (Next must be OFF)"},
+			{"combo":"X", "desc":"Switches to play sequentially"}
+		]
+	},
+
+	{ "lvl":"Advanced",
+		"set":
+		[
+			{"combo":"A", "desc":"Adds a directory recursively to the playlist"},
+			{"combo":"/", "desc":"Searches marked string in file names"},
+			{"combo":"o", "desc":"Plays a file from the Internet"},
+			{"combo":"r", "desc":"Rereads the directory"},
+			{"combo":"T", "desc":"Switches to the theme selection menu"},
+			{"combo":"f", "desc":"Toggles display mode of song titles"},
+			{"combo":"l", "desc":"Switches between displaying playlist or file manager"},
+			{"combo":"P", "desc":"Switches full path in the playlist"},
+			{"combo":"H", "desc":"Toggles hidden files view"},
+			{"combo":"m", "desc":"Moves to directory entered in config file"},
+			{"combo":"G", "desc":"Moves to directory with currently played file"},
+			{"combo":"i", "desc":"Moves to marked directory"},
+			{"combo":"U", "desc":"Moves to upper directory"}
+		]
+	}
+]

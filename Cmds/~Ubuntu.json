@@ -1,3 +1,36 @@
+
+  cd
+  pwd
+  ls
+  rm
+  rmdir
+  mkdir
+  mv
+  cp
+  man
+  poweroff
+  find
+  grep
+  cat
+  passwd
+  xkill
+  sudo
+  apt-get install
+  apt-get remove
+  apt-cache search
+  cal
+  pushd
+  popd
+  !!
+  !foo
+  ^foo^bar
+  echo
+  nano
+  |
+  >
+
+
+
 [
 
 	{ "lvl":0,
